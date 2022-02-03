@@ -9,7 +9,6 @@ const fs = require('fs')
 const path = require('path')
 
 const PORT = process.env.PORT || 3001
-
 let rawdata = fs.readFileSync(path.resolve(__dirname, 'db.json'))
 let data = JSON.parse(rawdata)
 
